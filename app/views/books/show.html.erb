@@ -35,12 +35,12 @@
       </table>
       <table class='table'>
         <tr>
-          <td>
-            <%= render 'book_comments/book_comments', book: @book %>
+          <td id="comments-area">
+            <%= render "book_comments/book_comments", book: @book, book_comment: @book_comment %>
           </td>
         </tr>
         <tr>
-          <td>
+          <td class="new-comment">
             <%= render 'book_comments/form', book: @book, book_comment: @book_comment %>
           </td>
         </tr>
